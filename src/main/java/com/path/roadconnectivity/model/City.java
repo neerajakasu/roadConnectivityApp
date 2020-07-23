@@ -1,4 +1,4 @@
-package com.test.roadconnectivity.entity;
+package com.path.roadconnectivity.model;
 
 import java.util.HashSet;
 import java.util.Objects;

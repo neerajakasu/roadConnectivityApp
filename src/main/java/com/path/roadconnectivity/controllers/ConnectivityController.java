@@ -1,4 +1,4 @@
-package com.test.roadconnectivity.controllers;
+package com.path.roadconnectivity.controllers;
 
 import java.util.Optional;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.test.roadconnectivity.service.ConnectivityService;
+import com.path.roadconnectivity.service.ConnectivityService;
 
 @RestController
 public class ConnectivityController {
@@ -18,7 +18,7 @@ public class ConnectivityController {
 
 	@RequestMapping("/connected")
 	public String connectivityBetweenCities(@RequestParam(name = "origin", required=true) Optional<String> origin, @RequestParam(name = "destination", required=true) Optional<String> destination) {
-		if(StringUtils.isEmpty(origin) || StringUtils.isEmpty(destination)) {
+		if(!origin.isPresent() || !destination.isPresent()) {
 			return "no";
 		}
 		if(connectivityService.isConnected(origin, destination)) {

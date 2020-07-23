@@ -1,4 +1,4 @@
-package com.test.roadconnectivity.service;
+package com.path.roadconnectivity.service;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.test.roadconnectivity.entity.Cities;
-import com.test.roadconnectivity.entity.City;
-import com.test.roadconnectivity.entity.RoadConnectivity;
+import com.path.roadconnectivity.model.Cities;
+import com.path.roadconnectivity.model.City;
+import com.path.roadconnectivity.model.RoadConnectivity;
 
 @Service("connectivityService")
 public class ConnectivityServiceImpl implements ConnectivityService {

@@ -1,4 +1,4 @@
-package com.test.roadconnectivity.entity;
+package com.path.roadconnectivity.model;
 
 import java.io.File;
 import java.io.FileInputStream;

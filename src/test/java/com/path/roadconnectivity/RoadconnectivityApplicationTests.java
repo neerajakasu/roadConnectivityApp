@@ -1,4 +1,4 @@
-package com.test.roadconnectivity;
+package com.path.roadconnectivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,9 +16,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.test.roadconnectivity.entity.Cities;
-import com.test.roadconnectivity.entity.City;
-import com.test.roadconnectivity.entity.RoadConnectivity;
+import com.path.roadconnectivity.model.Cities;
+import com.path.roadconnectivity.model.City;
+import com.path.roadconnectivity.model.RoadConnectivity;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
